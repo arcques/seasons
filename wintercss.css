@@ -1,0 +1,159 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+p {
+    background-color: #00CED1;
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: italic;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#features {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 40px auto; 
+    width: 80%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+#features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#gal {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+#gal img {
+    width: 22%;
+    height: auto;
+    border-radius: 10px;
+}
+
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    color: #333; 
+}
+
+th, td { 
+    padding: 10px; 
+    border: 1px solid rgb(56, 8, 8); 
+}
+
+
+caption {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+td {
+    border: 2px solid #00BFFF;
+    padding: 15px;
+    text-align: center;
+}
+
+#film {
+    text-align: center;
+    padding: 50px;
+}
+
+#film video {
+    width: 60%;
+    height: auto;
+}
+
+#opros {
+    text-align: center;
+    padding: 50px;
+}
+
+.snowflake {
+    position: absolute;
+    width: 50px;
+    animation: moveDown 5s ease-in-out infinite alternate;
+}
+
+@keyframes moveDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}
+
+#s1 { top: 10%; left: 20%; }
+#s2 { top: 15%; left: 40%; }
+#s3 { top: 20%; left: 60%; }
+#s4 { top: 25%; left: 80%; }
+
+body {
+    
+    background-color: #071125; 
+}
+
+.snowflake {
+    position: absolute;
+    top: -10%; 
+    font-size: 24px;
+    animation: moveDown 3s linear infinite; 
+}
+
+
+@keyframes moveDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); } 
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.snowflake {
+    position: absolute;
+    width: 50px;
+    animation: moveDown 5s ease-in-out infinite alternate, melt 5s forwards, rotate 5s linear infinite; /* Добавлено вращение */
+}
+
+
+body {
+    overflow: hidden; /* Скрываем полосу прокрутки */
+    background-color: #282c34; /* Цвет фона */
+}
+
+.snowflake {
+    position: absolute;
+    top: -10%; /* Начинаем выше экрана */
+    font-size: 24px; /* Размер снежинки */
+    animation: moveDown 3s linear infinite; /* Анимация движения вниз */
+}
+
+/* Анимация движения вниз */
+@keyframes moveDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); } /* Двигаем вниз на всю высоту экрана */
+
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
